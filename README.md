@@ -17,27 +17,37 @@ To run this project, ensure you have the following Python packages installed:
 ```bash
 pip install requests pandas matplotlib
 
-# Crypto Market Volatility & Correlation (BTC/ETH/SOL)
 
-## Project Overview
-This project analyzes one year of daily crypto market data (BTC, ETH, SOL) using the CoinGecko API.  
-It focuses on time-series feature engineering (returns, rolling volatility, dynamic correlations) and reproducible visualization.
 
-## Key Outputs
-- Price trajectories
-- Rolling volatility profiles
-- Correlation heatmaps and time-varying co-movement insights
+# Crypto Market Volatility & Dynamic Correlation Analysis
+
+## Overview
+This project investigates dynamic volatility behavior and time-varying cross-asset correlations in cryptocurrency markets (BTC, ETH, SOL) using daily data from the CoinGecko API.
+
+The goal is to move beyond static correlations and explore how market dependence shifts under different volatility regimes.
+
+## Key Questions
+- How does rolling volatility differ across assets?
+- Do cross-asset correlations strengthen during high-volatility periods?
+- Can time-series feature engineering improve interpretation of market risk?
+
+## Methods
+- Daily log returns calculation
+- Rolling volatility (window-based estimation)
+- Time-varying correlation analysis
+- Visualization of regime-like shifts in co-movement
+
+## Results & Insights
+- Volatility clustering observed across all major assets
+- Correlation strength increased during high-volatility regimes
+- Static correlation underestimates tail risk dependence
+
+## Tech Stack
+Python, Pandas, NumPy, Matplotlib  
+Modularized data ingestion and visualization pipeline
 
 ## Repository Structure
-- `final_project.ipynb`: EDA + result walkthrough
-- `src/`
-  - `get_data.py`: API ingestion + cleaning
-  - `visualize_results.py`: plots and report-ready figures
-- `data/`: raw and processed datasets
+- `src/get_data.py`: API ingestion + cleaning
+- `src/visualize_results.py`: plotting and statistical visualization
+- `final_project.ipynb`: EDA walkthrough
 - `results/`: exported figures
-
-## Quickstart
-```bash
-pip install -r requirements.txt
-python -m src.get_data --coins btc eth sol --days 365
-python -m src.visualize_results
