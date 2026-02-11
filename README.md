@@ -15,7 +15,6 @@ The goal is to move beyond static correlations and explore how market dependence
 - Rolling volatility (window-based estimation)
 - Time-varying correlation analysis
 - Visualization of regime-like shifts in co-movement
-
 ## Key Results
 
 ### Rolling Volatility (30-Day)
@@ -41,10 +40,6 @@ Higher trading volume tends to coincide with elevated volatility, particularly i
 
 ### Price Trends
 ![Price Trends](results/daily_price.png)
----
-
-### Price Trends
-![Price Trends](/Users/peggy/Desktop/pyhton LAB/result)
 
 ## Tech Stack
 Python, Pandas, NumPy, Matplotlib  
