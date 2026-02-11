@@ -30,3 +30,20 @@ Modularized data ingestion and visualization pipeline
 - `src/visualize_results.py`: plotting and statistical visualization
 - `final_project.ipynb`: EDA walkthrough
 - `results/`: exported figures
+
+## Reproducibility
+
+### Install Dependencies
+pip install -r requirements.txt
+
+### Run Data Pipeline
+python -m src.get_data
+python -m src.visualize_results
+
+All output figures will be saved to the `results/` directory.
+
+
+requests
+pandas
+numpy
+matplotlib
