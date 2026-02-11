@@ -16,30 +16,23 @@ The goal is to move beyond static correlations and explore how market dependence
 - Time-varying correlation analysis
 - Visualization of regime-like shifts in co-movement
 ## Key Results
-
 ### Rolling Volatility (30-Day)
-![Rolling Volatility](results/rolling_volatility.png)
-
-Volatility clustering observed across all assets. SOL shows the highest regime spikes, while BTC remains relatively stable.
+![Rolling Volatility](results/volatility_time_series.png)
 
 ---
 
 ### Correlation Heatmap
 ![Correlation Heatmap](results/price_correlation_heatmap.png)
 
-Cross-asset correlation increases during high-volatility periods, suggesting stronger systemic dependence.
-
 ---
 
 ### Volume vs Volatility
 ![Volume vs Volatility](results/volume_vs_volatility.png)
 
-Higher trading volume tends to coincide with elevated volatility, particularly in ETH and SOL.
-
 ---
 
 ### Price Trends
-![Price Trends](results/daily_price.png)
+![Price Trends](results/price_time_series.png)
 
 ## Tech Stack
 Python, Pandas, NumPy, Matplotlib  
