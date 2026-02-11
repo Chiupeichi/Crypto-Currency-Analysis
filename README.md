@@ -16,10 +16,31 @@ The goal is to move beyond static correlations and explore how market dependence
 - Time-varying correlation analysis
 - Visualization of regime-like shifts in co-movement
 
-## Results & Insights
-- Volatility clustering observed across all major assets
-- Correlation strength increased during high-volatility regimes
-- Static correlation underestimates tail risk dependence
+## Key Results
+
+### Rolling Volatility (30-Day)
+![Rolling Volatility](/Users/peggy/Desktop/pyhton LAB/result)
+
+Volatility clustering observed across all assets. SOL shows the highest regime spikes, while BTC remains relatively stable.
+
+---
+
+### Correlation Heatmap
+![Correlation Heatmap](/Users/peggy/Desktop/pyhton LAB/result)
+
+Cross-asset correlation increases during high-volatility periods, suggesting stronger systemic dependence.
+
+---
+
+### Volume vs Volatility
+![Volume vs Volatility](/Users/peggy/Desktop/pyhton LAB/result)
+
+Higher trading volume tends to coincide with elevated volatility, particularly in ETH and SOL.
+
+---
+
+### Price Trends
+![Price Trends](/Users/peggy/Desktop/pyhton LAB/result)
 
 ## Tech Stack
 Python, Pandas, NumPy, Matplotlib  
